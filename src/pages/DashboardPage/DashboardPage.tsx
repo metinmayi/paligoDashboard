@@ -1,12 +1,8 @@
 import React from "react";
 import { ContextMenu } from "./ContextMenu/ContextMenu";
-import { StyledPageContent } from "./ContextMenu/StyledPageContent";
+import { StyledPageContent } from "./StyledPageContent";
 export const DashboardPage: React.FC = () => {
-  const [isContextOpen, setIsContextOpen] = React.useState(false);
-
-  function toggleOpen() {
-    setIsContextOpen((current) => !current);
-  }
+  const [isContextOpen, setIsContextOpen] = React.useState(true);
 
   return (
     <>
@@ -15,14 +11,13 @@ export const DashboardPage: React.FC = () => {
         setIsContextOpen={setIsContextOpen}
       ></ContextMenu>
       <StyledPageContent className="jabba" isContextOpen={isContextOpen}>
-        <button onClick={() => toggleOpen()}>Toggle</button>
         <div className="navigationMenu">
-          <ul style={{ display: "flex" }}>
-            <li>Abc</li>
-            <li>Abc</li>
-            <li>Abc</li>
-            <li>Abc</li>
-          </ul>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae sed,
+            veniam magnam iste similique illo itaque perferendis qui delectus
+            enim rem accusantium placeat corporis, at fuga esse corrupti
+            assumenda libero!
+          </p>
         </div>
       </StyledPageContent>
     </>

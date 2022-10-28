@@ -1,0 +1,22 @@
+.MuiPaper-root{
+    background: #1d2336 !important;
+    width: 20vw;
+    z-index: 1500;
+    overflow-y: visible !important;
+    visibility: visible !important;
+    transform: translateX(-17vw);
+}
+header{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+button{
+    position: absolute;
+    height: 50%;
+    right: 0;
+    transform: translatex(50%);
+    z-index: 100;
+    visibility: visible !important;
+    min-width: 20px;
+}

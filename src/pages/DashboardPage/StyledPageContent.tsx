@@ -1,11 +1,11 @@
 import styled from "@emotion/styled";
-interface PageContentProps {
+interface StyledPageContentProps {
   isContextOpen: boolean;
 }
-export const StyledPageContent = styled.div<PageContentProps>(
+export const StyledPageContent = styled.div<StyledPageContentProps>(
   ({ isContextOpen }) => ({
     transition: "0.2s",
-    width: isContextOpen ? `calc(100% - 340px)` : "100%",
+    width: isContextOpen ? `calc(100% - 18vw)` : "100%",
     position: "absolute",
     right: 0,
   })

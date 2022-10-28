@@ -1,5 +1,5 @@
+import { Drawer } from "@mui/material";
 import * as React from "react";
-import Drawer from "@mui/material/Drawer";
 import "../DashboardPage.css";
 
 interface ContextMenuProps {
@@ -20,7 +20,10 @@ export const ContextMenu: React.FC<ContextMenuProps> = ({
       variant="persistent"
       className="context-menu-wrapper"
     >
-      <p>This is the contextmenu</p>
+      <header>
+        <p>This is the contextmenu</p>
+        <button onClick={() => toggleDrawer()}>Toggle</button>
+      </header>
     </Drawer>
   );
 };
